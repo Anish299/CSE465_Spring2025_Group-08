@@ -47,12 +47,14 @@ This project detects **Chronic Kidney Disease (CKD)** using a 5-layer Artificial
 ---
 
 ## Project Structure
-CKD_Classifier/
-│
-├── train.ipynb          # For training the 5-layer ANN with 5-fold cross-validation
-├── test_script.py       # For loading the model and making predictions
-├── Network.jpg          # Block diagram of the ANN architecture
-├── Readme.md            # Project documentation
-├── model.h5             # Saved trained model
-└── dataset/      
+Sure! Here's the same project structure using bullet points:
+
+- CKD_Classifier/
+  - train.ipynb  
+  - test_script.py  
+  - model.h5  
+  - Network.jpg  
+  - dataset/
+    - augmented_ckd.csv  
+    - new_samples.csv
 

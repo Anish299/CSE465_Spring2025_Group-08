@@ -1,5 +1,5 @@
 # CSE465_Spring2025_Group-08
-# 🩺 Chronic Kidney Disease Detection using Neural Networks
+# Chronic Kidney Disease Detection using Neural Networks
 
 This project detects **Chronic Kidney Disease (CKD)** using a 5-layer Artificial Neural Network (ANN) trained on an **augmented medical dataset**. It classifies whether a patient has CKD based on various clinical indicators.
 

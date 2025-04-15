@@ -5,7 +5,7 @@ This project detects **Chronic Kidney Disease (CKD)** using a 5-layer Artificial
 
 ---
 
-## 🚀 Project Overview
+## Project Overview
 
 - **Objective**: Predict the presence of CKD from clinical numeric data.
 - **Methodology**: Train a deep neural network with 5-fold cross-validation.
@@ -13,7 +13,7 @@ This project detects **Chronic Kidney Disease (CKD)** using a 5-layer Artificial
 
 ---
 
-## 📁 Dataset
+## Dataset
 
 - The dataset is augmented to improve model robustness and generalization.
 - Augmented files are located in the `augmented_dataset/` directory.
@@ -27,7 +27,7 @@ This project detects **Chronic Kidney Disease (CKD)** using a 5-layer Artificial
 
 ---
 
-## 🧠 Model Architecture
+## Model Architecture
 
 - 5-layer fully connected ANN.
 - **Activation Functions**:
@@ -38,7 +38,7 @@ This project detects **Chronic Kidney Disease (CKD)** using a 5-layer Artificial
 
 ---
 
-## 📊 Training Configuration
+## Training Configuration
 
 - **Validation**: 5-Fold Cross Validation
 - **Metrics**: Accuracy, Precision, Recall, Loss
@@ -46,6 +46,13 @@ This project detects **Chronic Kidney Disease (CKD)** using a 5-layer Artificial
 
 ---
 
-## 📂 Project Structure
-
+## Project Structure
+CKD_Classifier/
+│
+├── train.ipynb          # For training the 5-layer ANN with 5-fold cross-validation
+├── test_script.py       # For loading the model and making predictions
+├── Network.jpg          # Block diagram of the ANN architecture
+├── Readme.md            # Project documentation
+├── model.h5             # Saved trained model
+└── dataset/      
 

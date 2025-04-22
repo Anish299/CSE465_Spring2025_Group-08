@@ -43,9 +43,6 @@ The notebook explores:
 
 
 
-##  K-Nearest Neighbors (KNN)
-
-- **Model**: `KNeighborsClassifier`
 - **Hyperparameter Tuning**: `RandomizedSearchCV`
 - **Evaluation Metrics**:
   - Accuracy
@@ -80,21 +77,10 @@ The notebook explores:
 
 
 
-##  Model Persistence
-
-Models were saved using:
-
-- `joblib`
-- `pickle`
-
-This enables reloading without retraining, ready for deployment.
-
-
-
 ##  Results & Conclusion
 
 - The model successfully detects CKD and classifies it into stages.
-- Both classical ML (KNN) and deep learning (PyTorch) approaches are tested.
+- Both classical deep learning (PyTorch) approaches are tested.
 - Balanced datasets improve fairness across all CKD stages.
 - Visualization tools support transparency and explainability.
 

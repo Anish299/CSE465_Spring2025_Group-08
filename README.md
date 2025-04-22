@@ -1,60 +1,107 @@
-# CSE465_Spring2025_Group-08
-# Chronic Kidney Disease Detection using Neural Networks
+# 🩺 Chronic Kidney Disease (CKD) Detection Project
 
-This project detects **Chronic Kidney Disease (CKD)** using a 5-layer Artificial Neural Network (ANN) trained on an **augmented medical dataset**. It classifies whether a patient has CKD based on various clinical indicators.
-
----
-
-## Project Overview
-
-- **Objective**: Predict the presence of CKD from clinical numeric data.
-- **Methodology**: Train a deep neural network with 5-fold cross-validation.
-- **Tools & Libraries**: Python, TensorFlow/Keras (or PyTorch), Pandas, NumPy, Scikit-learn, Google Colab.
+## 📌 Overview
+This project aims to detect and classify Chronic Kidney Disease (CKD) stages using machine learning and deep learning techniques. It involves exploratory data analysis (EDA), preprocessing, modeling, evaluation, and model persistence for real-world usage.
 
 ---
 
-## Dataset
+## 📁 Dataset Information
 
-- The dataset is augmented to improve model robustness and generalization.
-- Augmented files are located in the `augmented_dataset/` directory.
-- Each entry includes features such as:
-  - Blood pressure
-  - Blood glucose levels
-  - Serum creatinine
-  - Hemoglobin
-  - Packed cell volume
-  - and more...
+This project uses three datasets:
+
+- `imputed data.csv`
+- `CKD_dataset_AbuDhabi.csv`
+- `40K_dataset.csv`
+
+Each dataset contains clinical and laboratory features with a corresponding target column (`stage`, `ckd_stage`, or `CKD_stage`) representing the CKD stage.
 
 ---
 
-## Model Architecture
+## 🧼 Data Preprocessing
 
-- 5-layer fully connected ANN.
-- **Activation Functions**:
-  - ReLU (hidden layers)
-  - Sigmoid or Softmax (output)
-- **Optimizer**: Adam
-- **Loss Function**: Binary Crossentropy
+Key preprocessing steps:
 
----
-
-## Training Configuration
-
-- **Validation**: 5-Fold Cross Validation
-- **Metrics**: Accuracy, Precision, Recall, Loss
-- Training logs and graphs are included in the notebook.
+- **Missing Value Analysis**: Percentage of missing values computed for each file.
+- **Feature Exploration**:
+  - Unique value count
+  - Data type checking (categorical vs numerical)
+- **Feature Visualization**:
+  - Histograms, bar plots, pie charts for understanding distribution
+- **Data Balancing**: Used `SMOTE` to handle class imbalance
+- **Standardization**: Applied `StandardScaler` for numeric features
 
 ---
 
-## Project Structure
-Sure! Here's the same project structure using bullet points:
+## 🧪 Exploratory Data Analysis (EDA)
 
-- CKD_Classifier/
-  - train.ipynb  
-  - test_script.py  
-  - model.h5  
-  - Network.jpg  
-  - dataset/
-    - augmented_ckd.csv  
-    - new_samples.csv
+The notebook explores:
 
+- Class distributions
+- Missing data patterns
+- Value distributions across all features
+- Frequency of categories in categorical features
+
+---
+
+## 🧮 Machine Learning – K-Nearest Neighbors (KNN)
+
+- **Model**: `KNeighborsClassifier`
+- **Hyperparameter Tuning**: `RandomizedSearchCV`
+- **Evaluation Metrics**:
+  - Accuracy
+  - Confusion Matrix
+  - Classification Report (Precision, Recall, F1-Score)
+
+---
+
+## 🧠 Deep Learning – PyTorch Neural Network
+
+- **Framework**: PyTorch
+- **Architecture**: Fully Connected Feedforward Network
+- **DataLoader**: Batch processing using PyTorch `TensorDataset`
+- **Loss Function**: `CrossEntropyLoss`
+- **Optimizer**: `Adam`
+- **Evaluation**:
+  - ROC Curve
+  - Precision-Recall Curve
+  - AUC Score
+
+---
+
+## 📊 Performance Evaluation
+
+- **Permutation Importance**: To analyze feature impact
+- **Learning Curves**: Training performance over time
+- **Validation Curves**: Model behavior over hyperparameter changes
+- **Visual Aids**:
+  - ROC & PR curves
+  - Confusion matrix plots
+  - Feature importance bar plots
+
+---
+
+## 💾 Model Persistence
+
+Models were saved using:
+
+- `joblib`
+- `pickle`
+
+This enables reloading without retraining, ready for deployment.
+
+---
+
+## ✅ Results & Conclusion
+
+- The model successfully detects CKD and classifies it into stages.
+- Both classical ML (KNN) and deep learning (PyTorch) approaches are tested.
+- Balanced datasets improve fairness across all CKD stages.
+- Visualization tools support transparency and explainability.
+
+---
+
+## 🚀 Future Work
+
+- Add more diverse datasets
+- Implement Transformer-based models for tabular data
+- Deploy as a web or mobile app using Flask or FastAPI

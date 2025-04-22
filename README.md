@@ -59,3 +59,5 @@ Average precision across 5 folds: 97.00% ,
 Average recall across 5 folds: 98.15% ,
 Average F1 score across 5 folds: 97.57%
 
+# References
+https://www.kaggle.com/datasets/davidechicco/chronic-kidney-disease-ehrs-abu-dhabi?resource=download

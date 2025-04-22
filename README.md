@@ -52,7 +52,14 @@ Each dataset contains clinical and laboratory features with a corresponding targ
    Finally, a comparative analysis was performed between the original and augmented datasets using descriptive statistics such as mean, standard deviation, and distribution plots. This step was essential to confirm that the augmentation process preserved the core characteristics of the original dataset and did not introduce unintended bias or distortion.
 
 6. The average accuracy, precision, recall, and F1 score for your neural network model evaluated using 5-fold cross-validation
+# MLP (Multi-Layer Perceptron)
+MLPs are specifically designed for numerical data.
+It makes it Simple, powerful, and interpretable.
+Easily handles any number of features.
 
+
+
+Works great with proper data preprocessing (scaling, normalization).
 # Results and Performance
 Average accuracy across 5 folds: 98.24% ,
 Average precision across 5 folds: 97.00% ,

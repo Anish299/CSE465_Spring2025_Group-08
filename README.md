@@ -9,7 +9,7 @@ This project aims to detect and classify Chronic Kidney Disease (CKD) stages usi
 
 This project uses three datasets:
 
-- `imputed data.csv`
+
 - `CKD_dataset_AbuDhabi.csv`
 - `40K_dataset.csv`
 

@@ -43,7 +43,7 @@ The notebook explores:
 
 
 
-##  Machine Learning – K-Nearest Neighbors (KNN)
+##  K-Nearest Neighbors (KNN)
 
 - **Model**: `KNeighborsClassifier`
 - **Hyperparameter Tuning**: `RandomizedSearchCV`

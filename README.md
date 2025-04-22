@@ -1,11 +1,11 @@
-# 🩺 Chronic Kidney Disease (CKD) Detection Project
+#  Chronic Kidney Disease (CKD) Detection Project
 
-## 📌 Overview
+##  Overview
 This project aims to detect and classify Chronic Kidney Disease (CKD) stages using machine learning and deep learning techniques. It involves exploratory data analysis (EDA), preprocessing, modeling, evaluation, and model persistence for real-world usage.
 
----
 
-## 📁 Dataset Information
+
+## Dataset Information
 
 This project uses three datasets:
 
@@ -15,9 +15,9 @@ This project uses three datasets:
 
 Each dataset contains clinical and laboratory features with a corresponding target column (`stage`, `ckd_stage`, or `CKD_stage`) representing the CKD stage.
 
----
 
-## 🧼 Data Preprocessing
+
+##  Data Preprocessing
 
 Key preprocessing steps:
 
@@ -30,9 +30,9 @@ Key preprocessing steps:
 - **Data Balancing**: Used `SMOTE` to handle class imbalance
 - **Standardization**: Applied `StandardScaler` for numeric features
 
----
 
-## 🧪 Exploratory Data Analysis (EDA)
+
+##  Exploratory Data Analysis (EDA)
 
 The notebook explores:
 
@@ -41,9 +41,9 @@ The notebook explores:
 - Value distributions across all features
 - Frequency of categories in categorical features
 
----
 
-## 🧮 Machine Learning – K-Nearest Neighbors (KNN)
+
+##  Machine Learning – K-Nearest Neighbors (KNN)
 
 - **Model**: `KNeighborsClassifier`
 - **Hyperparameter Tuning**: `RandomizedSearchCV`
@@ -52,9 +52,9 @@ The notebook explores:
   - Confusion Matrix
   - Classification Report (Precision, Recall, F1-Score)
 
----
 
-## 🧠 Deep Learning – PyTorch Neural Network
+
+##  Deep Learning – PyTorch Neural Network
 
 - **Framework**: PyTorch
 - **Architecture**: Fully Connected Feedforward Network
@@ -66,9 +66,9 @@ The notebook explores:
   - Precision-Recall Curve
   - AUC Score
 
----
 
-## 📊 Performance Evaluation
+
+##  Performance Evaluation
 
 - **Permutation Importance**: To analyze feature impact
 - **Learning Curves**: Training performance over time
@@ -78,9 +78,9 @@ The notebook explores:
   - Confusion matrix plots
   - Feature importance bar plots
 
----
 
-## 💾 Model Persistence
+
+##  Model Persistence
 
 Models were saved using:
 
@@ -89,18 +89,18 @@ Models were saved using:
 
 This enables reloading without retraining, ready for deployment.
 
----
 
-## ✅ Results & Conclusion
+
+##  Results & Conclusion
 
 - The model successfully detects CKD and classifies it into stages.
 - Both classical ML (KNN) and deep learning (PyTorch) approaches are tested.
 - Balanced datasets improve fairness across all CKD stages.
 - Visualization tools support transparency and explainability.
 
----
 
-## 🚀 Future Work
+
+##  Future Work
 
 - Add more diverse datasets
 - Implement Transformer-based models for tabular data
